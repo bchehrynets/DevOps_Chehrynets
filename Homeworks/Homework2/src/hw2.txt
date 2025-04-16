@@ -1,0 +1,12 @@
+1) Kernel — the core part of the Linux operating system that manages the interaction between hardware and software. It controls memory, processes, files, devices, and networking. Without the kernel, the system cannot function.
+
+2) Libraries — a set of functions that simplify program development and execution. They allow programs to interact with the kernel and perform common tasks (like printing text or working with files).
+
+3) System utilities — programs used to maintain and configure the system. They allow the user to manage files, processes, networking, and more. Examples include: ls, cp, top, and apt. These utilities are how users typically interact with the system.
+
+
+1) Kernel (ядро) — це центральна частина ОС Linux, яка відповідає за взаємодію між апаратною частиною комп’ютера та програмами. Воно керує пам’яттю, процесами, файлами, пристроями та мережею. Без ядра система не зможе працювати.
+
+2) Libraries (бібліотеки) — це набір функцій, які спрощують розробку та виконання програм. Вони дозволяють програмам взаємодіяти з ядром та виконувати типові задачі (наприклад, вивід тексту, робота з файлами).
+
+3) System utilities (системні утиліти) — це програми для обслуговування та налаштування системи. Вони дозволяють користувачу виконувати різні дії — керувати

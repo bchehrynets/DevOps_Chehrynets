@@ -1,0 +1,46 @@
+1. Етапи завантаження системи Linux / Stages of Booting a Linux System:
+
+1. BIOS/UEFI – ініціалізація апаратного забезпечення.
+2. Завантажувач (GRUB) – завантажує ядро Linux.
+3. Ядро (Kernel) – виявляє пристрої, монтує root-файлову систему.
+4. init/systemd – запускає служби (services), фонові процеси (daemons).
+5. Вхід у систему – через термінал або графічне середовище.
+
+1. BIOS/UEFI – initializes hardware.
+2. Bootloader (e.g., GRUB) – loads the Linux kernel.
+3. Kernel – detects devices, mounts the root file system.
+4. init/systemd – starts services and daemons.
+5. Login – via terminal or GUI.
+
+
+2. Як переглянути системні журнали / How to View System Logs:
+
+- journalctl – перегляд systemd-журналів.
+- dmesg – повідомлення ядра.
+- /var/log/ – каталог логів (наприклад, /var/log/syslog).
+
+- journalctl – view systemd-based logs.
+- dmesg – kernel messages.
+- /var/log/ – log directory (e.g., /var/log/syslog).
+
+
+3. -rw------- : Опис дозволу / Permission Description:
+
+- r = читання (read), w = запис (write), x = виконання (execute).
+- -rw------- означає: лише власник може читати і записувати, інші – без доступу.
+- Щоб додати дозвіл на виконання:
+  chmod +x назва_файлу
+
+- r = read, w = write, x = execute.
+- -rw------- means: only owner can read and write, others have no permissions.
+- To add execute permission:
+  chmod +x filename
+
+
+4. Різниця між apt і dpkg / Difference Between apt and dpkg:
+
+- dpkg – низькорівнева утиліта для встановлення .deb-пакетів (без автоматичної обробки залежностей).
+- apt – високорівнева утиліта, працює через dpkg, автоматично обробляє залежності, використовує репозиторії.
+
+- dpkg – low-level tool for installing .deb packages (no dependency resolution).
+- apt – high-level tool, works via dpkg, resolves dependencies, uses repositories.

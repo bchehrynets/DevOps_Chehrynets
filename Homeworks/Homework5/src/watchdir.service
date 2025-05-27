@@ -1,0 +1,14 @@
+[Unit]
+Description=Directory Watcher for ~/watch
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/server1/DevOps_Chehrynets/Homeworks/Homework5/src/warch_directory.sh
+Restart=always
+User=server1
+Environment=Home=/home/server1
+
+[Install]
+WantedBy=default.target
+

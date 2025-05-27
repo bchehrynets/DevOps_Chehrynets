@@ -1,0 +1,31 @@
+Task: Create user "bob", change hostname, install nginx
+
+ Steps done:
+1. Created user `bob` and added to `sudo` group
+sudo adduser bob
+sudo usermod -aG sudo bob
+
+2. Created script to change hostname to `ubuntu22`
+sudo -u bob vi /home/bob/change_hostname.sh
+
+#!/bin/bash
+sudo hostnamectl set-hostname ubuntu22
+
+3. Gave execute permission only to `bob`
+sudo chmod 700 /home/bob/change_hostname.sh
+
+4. Ran script, rebooted, hostname updated
+sudo -u bob /home/bob/change_hostname.sh
+sudo reboot now
+hostname
+
+5. Installed `nginx`, confirmed it is running
+sudo apt update
+sudo apt install nginx -y
+systemctl status nginx
+6. Used `netstat` to check open ports
+
+
+## Script:
+See `change_hostname.sh`
+

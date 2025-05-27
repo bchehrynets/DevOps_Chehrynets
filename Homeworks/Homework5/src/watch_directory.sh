@@ -1,26 +1,15 @@
 #!/bin/bash
 
 WATCH_DIR="$HOME/watch"
-
-# create the directory if it doesn't exist
-
 mkdir -p "$WATCH_DIR"
 
-# watch for new files
-
-inotifywait -m -e create --format "%f" "$WATCH_DIR" | while read filename; do
-	full path="$WATCH_DIR/$filename"
-
-	#wait for the file to be fully written
-	sleep 1
-
-	if [ -f "$fullpath" ]; then
-		echo "New file detected: $filename"
-		echo "Content:"
-		cat "$fullpath"
-
-
-		# rename the file
-		mv "$fullpath" "$fullpath.back"
-	fi
+inotifywait -m -e create --format '%f' "$WATCH_DIR" | while read FILE; do
+    FILE_PATH="$WATCH_DIR/$FILE"
+    if [ -f "$FILE_PATH" ]; then
+        echo "=== New File Detected: $FILE ==="
+        cat "$FILE_PATH"
+        mv "$FILE_PATH" "$FILE_PATH.back"
+        echo "--- Renamed to $FILE.back ---"
+    fi
 done
+

@@ -1,0 +1,48 @@
+URL: http://192.168.100.253:5000/students
+STATUS: 200
+RESPONSE: [{'age': '20', 'first_name': 'John', 'id': '1', 'last_name': 'Doe'}, {'age': '22', 'first_name': 'Jane', 'id': '2', 'last_name': 'Doe'}, {'age': '25', 'first_name': 'Mark', 'id': '3', 'last_name': 'Twain'}]
+
+URL: http://192.168.100.253:5000/students
+STATUS: 201
+RESPONSE: {'age': '20', 'first_name': 'John', 'id': '4', 'last_name': 'Doe'}
+
+URL: http://192.168.100.253:5000/students
+STATUS: 201
+RESPONSE: {'age': '22', 'first_name': 'Jane', 'id': '5', 'last_name': 'Doe'}
+
+URL: http://192.168.100.253:5000/students
+STATUS: 201
+RESPONSE: {'age': '25', 'first_name': 'Mark', 'id': '6', 'last_name': 'Twain'}
+
+URL: http://192.168.100.253:5000/students
+STATUS: 200
+RESPONSE: [{'age': '20', 'first_name': 'John', 'id': '1', 'last_name': 'Doe'}, {'age': '22', 'first_name': 'Jane', 'id': '2', 'last_name': 'Doe'}, {'age': '25', 'first_name': 'Mark', 'id': '3', 'last_name': 'Twain'}, {'age': '20', 'first_name': 'John', 'id': '4', 'last_name': 'Doe'}, {'age': '22', 'first_name': 'Jane', 'id': '5', 'last_name': 'Doe'}, {'age': '25', 'first_name': 'Mark', 'id': '6', 'last_name': 'Twain'}]
+
+URL: http://192.168.100.253:5000/students/2
+STATUS: 200
+RESPONSE: {'age': '23', 'first_name': 'Jane', 'id': '2', 'last_name': 'Doe'}
+
+URL: http://192.168.100.253:5000/students/id/2
+STATUS: 200
+RESPONSE: {'age': '23', 'first_name': 'Jane', 'id': '2', 'last_name': 'Doe'}
+
+URL: http://192.168.100.253:5000/students/3
+STATUS: 200
+RESPONSE: {'age': '26', 'first_name': 'Marcus', 'id': '3', 'last_name': 'Twain'}
+
+URL: http://192.168.100.253:5000/students/id/3
+STATUS: 200
+RESPONSE: {'age': '26', 'first_name': 'Marcus', 'id': '3', 'last_name': 'Twain'}
+
+URL: http://192.168.100.253:5000/students
+STATUS: 200
+RESPONSE: [{'age': '20', 'first_name': 'John', 'id': '1', 'last_name': 'Doe'}, {'age': '23', 'first_name': 'Jane', 'id': '2', 'last_name': 'Doe'}, {'age': '26', 'first_name': 'Marcus', 'id': '3', 'last_name': 'Twain'}, {'age': '20', 'first_name': 'John', 'id': '4', 'last_name': 'Doe'}, {'age': '22', 'first_name': 'Jane', 'id': '5', 'last_name': 'Doe'}, {'age': '25', 'first_name': 'Mark', 'id': '6', 'last_name': 'Twain'}]
+
+URL: http://192.168.100.253:5000/students/1
+STATUS: 200
+RESPONSE: {'message': 'Student with id 1 deleted successfully'}
+
+URL: http://192.168.100.253:5000/students
+STATUS: 200
+RESPONSE: [{'age': '23', 'first_name': 'Jane', 'id': '2', 'last_name': 'Doe'}, {'age': '26', 'first_name': 'Marcus', 'id': '3', 'last_name': 'Twain'}, {'age': '20', 'first_name': 'John', 'id': '4', 'last_name': 'Doe'}, {'age': '22', 'first_name': 'Jane', 'id': '5', 'last_name': 'Doe'}, {'age': '25', 'first_name': 'Mark', 'id': '6', 'last_name': 'Twain'}]
+
